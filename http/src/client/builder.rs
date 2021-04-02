@@ -149,7 +149,8 @@ impl ClientBuilder {
         // Make sure it is either a bot or bearer token, and assume it's a bot
         // token if no prefix is given
         if !is_bot && !is_bearer {
-            token.insert_str(0, "Bot ");
+            // do nothing lol
+            //token.insert_str(0, "Bot ");
         }
 
         self.token.replace(token.into_boxed_str());
