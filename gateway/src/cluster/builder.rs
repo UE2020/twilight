@@ -42,7 +42,8 @@ impl ClusterBuilder {
 
     fn _new(mut token: String, intents: Intents) -> Self {
         if !token.starts_with("Bot ") {
-            token.insert_str(0, "Bot ");
+            // do nothing lol
+            //token.insert_str(0, "Bot ");
         }
 
         let token = token.into_boxed_str();
